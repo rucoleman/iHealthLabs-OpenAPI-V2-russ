@@ -55,17 +55,17 @@ namespace iHealthlabs.OpenAPI.Sample.Library
     {
 
         #region You must modify this part
-        public string client_id = "e4dce2f7027044e0a6ce82e******";
-        public string client_secret = "bb6a0326db55468f8f474a******";
-        public string redirect_uri = "http://localhost:9201/TestPage.aspx";
-        public string sc = "082a65ac25db4262b795f******";
-        public string sv_OpenApiBP = "add22354420244ba9e0f3a5******";
+        public string client_id = "aa7d9ca1954e4787bc73e83967309236";
+        public string client_secret = "0e75eecd1e2548c690795e8d0ed52a55";
+        public string redirect_uri = "https://www.medwandsolutions.com/DataSinkDev/TestOne.ashx";
+        public string sc = "b1aa150b8da04c4f8a1718a41a89e35";
+        public string sv_OpenApiBP = "591ac83e7e8b44a6851344398631283f";
         public string sv_OpenApiWeight = "bd82a25dcf18446b90f32******";
         public string sv_OpenApiBG = "978af9615739478ea29794e******";
         public string sv_OpenApiSpO2 = "3ea83f3ca05342b5b862c******";
         public string sv_OpenApiActivity = "34f4434741414722b15fb******";
         public string sv_OpenApiSleep = "d7a1dfc8939742bca0a41e******";
-        public string sv_OpenApiUserInfo = "ba698f077b3843e8b2a3******";
+        public string sv_OpenApiUserInfo = "e21c7bdb403b4e98b5b61a1cf513be9f";
         public string sv_OpenApiFood = "43f68d3478aa436abd96a440a6d7fd64";
         public string sv_OpenApiSport = "43f68d3478aa436abd96a440a6d7fd64";
 
@@ -124,7 +124,8 @@ namespace iHealthlabs.OpenAPI.Sample.Library
                 + "?client_id=" + client_id
                 + "&response_type=" + response_type_code
                 + "&redirect_uri=" + HttpUtility.UrlEncode(redirect_uri)
-                + "&APIName=" + APIName_BP + " " + APIName_Weight + " " + APIName_BG + " " + APIName_BO + " " + APIName_SR + " " + APIName_User + " " + APIName_AR + " " + APIName_FOOD + " " + APIName_SPORT;
+                //                + "&APIName=" + APIName_BP + " " + APIName_Weight + " " + APIName_BG + " " + APIName_BO + " " + APIName_SR + " " + APIName_User + " " + APIName_AR + " " + APIName_FOOD + " " + APIName_SPORT;
+                + "&APIName=" + APIName_BP;
             HttpContext.Current.Response.Redirect(url);
         }
 
